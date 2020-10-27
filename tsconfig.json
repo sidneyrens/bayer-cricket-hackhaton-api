@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "*": [
+        "types/*"
+      ]
+    },
+    "module": "commonjs",
+    "target": "es2017",
+    "outDir": "./out",
+    "lib": [
+      "es2017",
+      "esnext.asynciterable"
+    ],
+    "sourceMap": true,
+    "rootDir": ".",
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "experimentalDecorators": true
+  },
+  "exclude": [
+    "node_modules"
+  ]
+}

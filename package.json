@@ -1,0 +1,30 @@
+{
+  "name": "lambda-express",
+  "version": "1.0.0",
+  "description": "lambda express aws serverless",
+  "main": "index.js",
+  "scripts": {
+    "local": "serverless offline start",
+    "deploy:non-prod": "sls deploy --stage non-prod",
+    "log": "serverless logs -f $FUNCTION -s $STAGE",
+    "log:tail": "serverless logs -f $FUNCTION -s $STAGE -t"
+  },
+  "keywords": [
+    "lambda",
+    "express",
+    "serverless",
+    "aws"
+  ],
+  "author": "ravill2",
+  "license": "ISC",
+  "dependencies": {
+    "aws-sdk": "^2.498.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "serverless": "^1.46.1",
+    "serverless-http": "^2.0.2",
+    "serverless-offline": "^5.7.2",
+    "serverless-plugin-typescript": "^1.1.7",
+    "typescript": "^3.5.3"
+  }
+}
