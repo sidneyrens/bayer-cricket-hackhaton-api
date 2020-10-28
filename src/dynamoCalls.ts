@@ -1,7 +1,7 @@
 const AWS = require('aws-sdk');
 
 const ddb = new AWS.DynamoDB.DocumentClient({
-   region: 'us-east-2'
+   region: 'us-east-1'
 });
 
 export const getDataFromDynamoDB = async (table, id) => {
